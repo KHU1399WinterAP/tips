@@ -17,7 +17,7 @@ public class Dashboard extends JFrame {
 	private boolean isDarkTheme = Objects.requireNonNull(Database.selectThemeByUsername(activeUser.username)).id == 2;
 	
 	public Dashboard() {
-		super("Using Custom Fonts");
+		super("Theme Settings");
 		
 		setContentPane(mainPanel);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
